@@ -1,5 +1,5 @@
 # Brush as WebAssembly Module!
-An experiment to use WebAssembly module as brush file. The purpose is to embed the bush together with project file so that vector layers in projects can be rendered correctly across multiple devices while taking little amount of storage space.
+An experiment to use WebAssembly module as brush file. The purpose is to embed the brush together with project file so that vector layers in projects can be rendered correctly across multiple devices, while taking little amount of storage space.
 
 ## Try it out
 > [!TIP]
