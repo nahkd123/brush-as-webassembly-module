@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Brush as WebAssembly Module</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' type="module" defer></script>
+</head>
+<body>
+    <h1>Brush as WebAssembly Module</h1>
+    <p>
+        An experiment of storing brush engine as WebAssembly module. For a simple brush, it is quite small (about 250 
+        bytes in size). My plan is to store brush settings under custom section as well, but I'm not sure if it is
+        possible to "fork" the module without writing WASM binary parser.</p>
+    <p>
+        Alternatively, I can just store only the settings in a JSON file, which is much easier and takes less disk
+        space.
+    </p>
+    <p>Draw on the canvas below with your favorite graphics tablet!</p>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <p>Below are the brush settings, which are also defined as globals in WebAssembly module.</p>
+</body>
+</html>
